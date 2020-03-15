@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+
+.nav {
+  width: 90%;
+  margin: auto;
+  height: 50px;
+  line-height: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-left {
+  position: absolute;
+  left: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-left img {
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  text-decoration: none;
+  float: left;
+  margin-left: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-right {
+ float: right;
+ margin-right: 25px;
+ cursor: pointer;
+}
+
+.theme-icon {
+  -webkit-transform: rotate(315deg); 
+  -moz-transform: rotate(315deg); 
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+  width: 15px;
+  display: inline-table;
+}
+
+.filter_container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.search_container {
+  flex: 1;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_border {
+  margin-left: 25px;
+  border-radius: 2px;
+  padding: 0px 20px;
+  width: 360px;
+  height: 35px;
+}
+
+.search_container input {
+  border: none;
+  border-color: transparent;
+  padding-left: 20px;
+  min-width: 320px;
+  min-height: 30px;
+}
+
+.search_container input:focus {
+  outline: none;
+}
+
+.search_icon {
+  -webkit-transform: rotate(315deg); 
+  -moz-transform: rotate(315deg); 
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+  width:15px;
+  height: 15px;
+  vertical-align: middle;
+  display: inline-table;
+}
+
+.regionmenu {
+  flex:1;
+  text-align: right;
+  margin: 0 25px 0 25px;
+  max-width: 200px;
+}
+
+.countries_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.justify-center {
+  justify-content: space-between;
+}
+
+.justify-left {
+  justify-content: flex-start;
+}
+
+.countrycard {
+  border-radius: 10px;
+  padding: 0px;
+  outline: none;
+  margin: 25px;
+  min-width: 220px;
+  max-width: 220px;
+}
+
+.countrycard img {
+  width: 220px;
+  min-width: 220px;
+  height: 145px;
+  min-height: 145px;
+  overflow: hidden;
+  border-radius: 9px 9px 0px 0px;
+  object-fit: cover;
+}
+
+.countryname { 
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.countrytext {
+  padding: 15px 20px 25px;
+  text-align: left;
+}
+
+.countryelement {
+  margin: 4px 0px;
+}
+
+.countrytext span {
+  color: #5e5858;
+}
+
+.myControlClassName {
+  border: 1px solid #e1e1e1 !important;
+  text-align: left;
+}
+
+.myMenuClassName {
+  margin-top: 1px !important;
+  text-align: left;
+}
+.Dropdown-option:hover {
+  background-color: #f2f9fc;
+  color: red;
 }
