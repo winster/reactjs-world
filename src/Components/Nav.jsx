@@ -8,7 +8,7 @@ function Nav(props) {
     <div className="nav-container">
       <div className="nav">
         <div className="nav-left">
-          <img className="logo" src={props.theme === 'light' ?'/logo_light.png' :'/logo_dark.png'}></img>
+          <img className="logo" src={props.theme === 'light' ?'/logo_light.png' :'/logo_dark.png'} alt="Logo"></img>
           <Link to="/" className="title">Where in the world?</Link>
         </div>
         <div className="nav-right" onClick={props.onToggleTheme}>

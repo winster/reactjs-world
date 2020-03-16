@@ -5,7 +5,7 @@ export const lightTheme = {
     navBackground: '#fff',
     cardBoxShadow: '0.5px 0.5px #e1dada',
     containerBoxShadow: 'inset 0 1px 0 0 #e1e1e1',
-    menuBorder: '#e1dada',
+    menuBorder: '0.5px solid #e1dada',
     backgroundHover: '#e1e1e1',
     textHover: '#363537',
 }
@@ -16,7 +16,7 @@ export const darkTheme = {
     navBackground: '#3e3e3e',
     cardBoxShadow: '0.5px 0.5px #000',
     containerBoxShadow:'inset 0 1px 0 0 #242020',
-    menuBorder: '#e1dada',
+    menuBorder: '0.5px solid #000',
     backgroundHover: '#242020',
     textHover: '#FAFAFA',
 }

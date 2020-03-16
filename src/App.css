@@ -2,13 +2,13 @@
 .nav {
   width: 90%;
   margin: auto;
-  height: 50px;
-  line-height: 50px;
+  height: 3.5rem;
+  line-height: 3.5rem;
 }
 
 .nav-left {
   position: absolute;
-  left: 15px;
+  left: 1rem;
 }
 
 .nav-left img {
@@ -18,18 +18,19 @@
 .title{
   text-decoration: none;
   float: left;
-  margin-left: 20px;
+  margin-left: 1rem;
   font-size: large;
   font-weight: bold;
 }
 
 .logo {
   height: 50px;
+  cursor: pointer;
 }
 
 .nav-right {
  float: right;
- margin-right: 25px;
+ margin-right: 2rem;
  cursor: pointer;
 }
 
@@ -38,7 +39,7 @@
   -moz-transform: rotate(315deg); 
   -o-transform: rotate(315deg);
   transform: rotate(315deg);
-  width: 15px;
+  width: 1rem;
   display: inline-table;
 }
 
@@ -48,7 +49,7 @@
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
-  padding: 30px 0;
+  padding: 2rem 0;
 }
 
 .search_container {
@@ -57,9 +58,9 @@
 }
 
 .search_border {
-  margin-left: 25px;
+  margin-left: 2rem;
   border-radius: 2px;
-  padding: 0px 20px;
+  padding: 0 1rem;
   width: 360px;
   height: 35px;
 }
@@ -67,7 +68,7 @@
 .search_container input {
   border: none;
   border-color: transparent;
-  padding-left: 20px;
+  padding-left: 1rem;
   min-width: 320px;
   min-height: 30px;
 }
@@ -81,7 +82,7 @@
   -moz-transform: rotate(315deg); 
   -o-transform: rotate(315deg);
   transform: rotate(315deg);
-  width:15px;
+  width: 15px;
   height: 15px;
   vertical-align: middle;
   display: inline-table;
@@ -90,7 +91,7 @@
 .regionmenu {
   flex:1;
   text-align: right;
-  margin: 0 25px 0 25px;
+  margin: 0 2rem 0 2rem;
   max-width: 200px;
 }
 
@@ -102,24 +103,20 @@
   margin: auto;
 }
 
-.justify-center {
-  justify-content: space-between;
-}
-
 .justify-left {
   justify-content: flex-start;
 }
 
 .countrycard {
-  border-radius: 10px;
-  padding: 0px;
+  border-radius: 1rem;
   outline: none;
-  margin: 25px;
+  margin: 1.5rem;
   min-width: 220px;
   max-width: 220px;
+  cursor: pointer;
 }
 
-.countrycard img {
+.cardimage img {
   width: 220px;
   min-width: 220px;
   height: 145px;
@@ -127,20 +124,36 @@
   overflow: hidden;
   border-radius: 9px 9px 0px 0px;
   object-fit: cover;
+  background-size: cover;
+}
+
+_:-ms-fullscreen, :root .cardimage {
+  width: 220px;
+  min-width: 220px;
+  height: 145px;
+  min-height: 145px;
+  overflow: hidden;
+  border-radius: 9px 9px 0px 0px;
+}
+
+_:-ms-fullscreen, :root .cardimage img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 .countryname { 
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .countrytext {
-  padding: 15px 20px 25px;
+  padding: 1rem 1rem 1rem;
   text-align: left;
 }
 
 .countryelement {
-  margin: 4px 0px;
+  margin: 0.3rem 0;
 }
 
 .countrytext span {
@@ -156,7 +169,86 @@
   margin-top: 1px !important;
   text-align: left;
 }
-.Dropdown-option:hover {
-  background-color: #f2f9fc;
-  color: red;
+
+.details_container, .notfound_container {
+  width: 90%;
+  margin: 3rem auto; 
+}
+
+.back_button, .border_button {
+  padding: 0.3rem 1rem;
+  font-size: smaller;
+}
+
+.detail_content {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.details_img_container {
+  flex: 1;
+}
+
+.details_img {
+  width: 100%;
+}
+
+.details_text_section {
+  flex: 1;
+  margin: 1rem 5rem;
+}
+
+.country_title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.country_description {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.country_boundaries_section {
+  display: grid;
+}
+
+.left_half {
+  flex: 1;
+}
+
+.right_half {
+  flex: 1;
+}
+
+.country_row {
+  margin-top: 0.5rem;
+  font-size: medium;
+  color: #5e5858;
+}
+.country_boundaries_label {
+  grid-column: 1;
+}
+
+.country_boundaries {
+  grid-column: 4;
+  margin-left: 1em;
+}
+
+.border_button {
+  margin: 0.3rem 0.3rem 0 0;
+  width: 8em;
+  max-width: 8em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loading_container {
+  width: 90%;
+  height: 100%;
+  margin: 3rem auto;  
+  text-align: center;
+  vertical-align: middle;
 }

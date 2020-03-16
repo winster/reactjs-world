@@ -2,8 +2,9 @@ import React from 'react';
 
 function NotFound() {
   return (
-    <div>
-        <h1>Not Found</h1>
+    <div className="notfound_container">
+        <h2>Not Found</h2>
+        <section>Try loading home page <a href="/">here</a></section>
     </div>
   );
 }

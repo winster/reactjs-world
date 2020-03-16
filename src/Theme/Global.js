@@ -61,6 +61,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.navBackground} !important;
     color: ${({ theme }) => theme.text} !important;
   }
+  
   .Dropdown-option {
     color: ${({ theme }) => theme.text} !important;
   }
@@ -69,4 +70,19 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.backgroundHover} !important;
     color: ${({ theme }) => theme.textHover} !important;
   }
+
+  .back_button, .border_button {
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    border: ${({ theme }) => theme.menuBorder}; 
+  }
+
+  .country_row label {
+    color: ${({ theme }) => theme.text};
+  }
+
+  .details_img {
+    box-shadow: ${({ theme }) => theme.cardBoxShadow};
+  }
+
 `;

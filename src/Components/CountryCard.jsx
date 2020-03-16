@@ -1,25 +1,20 @@
 import React from 'react';
 import {
-    Link, Redirect
+    withRouter
   } from "react-router-dom";
 
 class CountryCardComponent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = props.data;
-        this.state.population = this.state.population.toLocaleString('en');
-    }
-    handleOnClick = () => {
-        this.setState({requestDetails: true});
+    handleOnClick = (countryCode) => {
+        this.props.history.push("/"+countryCode);
     }
     render() {
-        if(this.state.requestDetails) {
-            return <Redirect push to={{pathname:"/details", state: this.state}}/>
-        }
         let country = this.props.data;
+        country.population = country.population.toLocaleString('en');
         return (
-        <div className="countrycard" onClick={this.handleOnClick}>
-            <img src={country.flag}/>
+        <div className="countrycard" onClick={this.handleOnClick.bind(this,country.alpha3Code)}>
+            <div className="cardimage">
+                <img src={country.flag} alt={country.name}/>
+            </div>
             <div className="countrytext">
                 <div className="countryname">
                     {country.name}
@@ -39,4 +34,4 @@ class CountryCardComponent extends React.Component {
     }
 }
 
-export default CountryCardComponent;
+export default withRouter(CountryCardComponent);
