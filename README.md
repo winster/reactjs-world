@@ -3,7 +3,7 @@ A reactjs application
 ## How to run application
 
 ### Pre-requisite steps
-1. git clone repo
+1. git clone repo /download and extract
 2. cd <project-directory>
 3. npm install
 
