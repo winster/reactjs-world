@@ -4,7 +4,7 @@ A reactjs application
 
 ### Pre-requisite steps
 1. git clone repo /download and extract
-2. cd <project-directory>
+2. cd project-directory
 3. npm install
 
 ### Runs the app in the development mode
