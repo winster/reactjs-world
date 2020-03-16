@@ -5,6 +5,7 @@ A reactjs application
 ### Pre-requisite steps
 1. git clone repo
 2. cd <project-directory>
+3. npm install
 
 ### Runs the app in the development mode
 `npm start`
@@ -16,7 +17,7 @@ Tested in Firefox 74.0, Chrome 80.x, Edge 42.x
 `npm run build`
 <br />
 Artefacts are generated in build folder.
-<br /> 
+<br /> <br/>
 `serve -s build`   (`npm install serve`)
 <br /> 
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
