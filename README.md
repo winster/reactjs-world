@@ -15,9 +15,12 @@ Tested in Firefox 74.0, Chrome 80.x, Edge 42.x
 ### Builds the app for production to the `build` folder
 `npm run build`
 <br />
-Artefacts are generated in build folder. 
-`serve -s build` 
+Artefacts are generated in build folder.
+<br /> 
+`serve -s build`   (`npm install serve`)
+<br /> 
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
+<br />
 Tested in Firefox 74.0, Chrome 80.x, Edge 42.x, IE 11
 
 ### `npm test`
